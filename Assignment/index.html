@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: "Poppins",
+            serif: "serif",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="m-0 p-0 bg-red-50">
+    <!--navbar-->
+    <header>
+      <nav
+        class="bg-slate-800 fixed h-16 w-full flex justify-between p-4 md:px-10"
+      >
+        <div
+          class="text-xl font-bold uppercase h-full flex items-center text-red-700 sm:text-2xl lg:text-4xl"
+        >
+          digital-llc
+        </div>
+        <input type="checkbox" id="click" class="hidden" />
+        <label
+          for="click"
+          class="bg-red-700 rounded px-2 flex items-center cursor-pointer md:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            class="w-7 h-7 fill-white"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <ul
+          class="bg-gray-200 fixed list-none top-16 right-0 left-0 w-full h-screen space-y-4 px-4 pt-8 text-center text-lg translate-y-[-200%] duration-700 md:flex-row md:h-full md:space-y-0 md:static md:flex md:top-0 md:right-auto md:left-auto md:w-auto md:space-x-4 items-center md:py-0 md:translate-y-0 md:bg-transparent md:text-base"
+        >
+          <li
+            class="hover:border-b-2 border-slate-900 md:hover:border-b-2 md:border-white"
+          >
+            <a
+              href="#"
+              class="no-underline bg-none px-2 py-1 rounded cursor-pointer text-black md:text-white"
+              >Servies</a
+            >
+          </li>
+          <li
+            class="hover:border-b-2 border-slate-900 md:hover:border-b-2 md:border-white"
+          >
+            <a
+              href="#about-us"
+              class="no-underline bg-none px-2 py-1 rounded cursor-pointer text-black md:text-white"
+              >About us</a
+            >
+          </li>
+          <li
+            class="hover:border-b-2 border-slate-900 md:hover:border-b-2 md:border-white"
+          >
+            <a
+              href="#blog"
+              class="no-underline bg-none px-2 py-1 rounded cursor-pointer text-black md:text-white"
+              >Blog</a
+            >
+          </li>
+          <li
+            class="hover:border-b-2 border-slate-900 md:hover:border-b-2 md:border-white"
+          >
+            <a
+              href="#industries"
+              class="no-underline bg-none px-2 py-1 rounded cursor-pointer text-black md:text-white"
+              >Industries</a
+            >
+          </li>
+          <li>
+            <a
+              href="#get-started"
+              class="no-underline bg-red-700 text-white px-4 py-2 rounded-full cursor-pointer text-center"
+            >
+              Get started
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--hero-page-->
+      <div
+        class="flex justify-center align-middle h-auto md:h-screen bg-no-repeat bg-cover py-32 px-4"
+        style="background-image: url('./images/23327.jpg')"
+      >
+        <h1
+          class="font-sans text-4xl font-semibold text-center py-4 w-full sm:max-w-2xl sm:text-5xl md:text-7xl md:max-w-3xl text-gray-50"
+        >
+          We connect brands with their customers in the
+          <span class="text-red-700">moments that matter.</span>
+        </h1>
+      </div>
+
+      <!--aboutus-page-->
+      <div
+        id="about-us"
+        class="px-4 flex flex-col space-y-16 md:space-y-40 pt-16 sm:pt-20 md:pt-28 md:px-6"
+      >
+        <!--who we are-->
+        <section
+          class="flex flex-col space-y-10 md:space-y-0 md:space-x-11 lg:space-x-24 md:flex-row"
+        >
+          <span class="w-full space-y-6">
+            <h2 class="text-2xl font-semibold md:text-3xl">Who We are</h2>
+            <p
+              class="text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+            >
+              To build a strong connection with customers, you need a
+              comprehensive digital marketing campaign. At Kanbar Digital, we
+              focus on the key digital marketing strategies needed to support
+              your business’s growth and expand your customer base.
+            </p>
+          </span>
+          <span
+            class="bg-gray-300 w-full h-32 text-slate-500 font-semibold text-lg flex justify-center items-center md:h-auto md:text-xl"
+            >map of san Diago</span
+          >
+        </section>
+
+        <!--our ceo-->
+        <figure
+          class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-11 lg:space-x-24"
+        >
+          <span class="w-full flex justify-center items-center p-2">
+            <img
+              src="./images/Ceo photo.png"
+              class="h-40 rounded-full sm:h-48 md:h-56"
+            />
+          </span>
+          <span class="w-full flex flex-col space-y-6">
+            <h2 class="text-2xl font-semibold md:text-3xl">Our CEO</h2>
+            <p
+              class="text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+            >
+              The CEO himself, Khalil Kanbar, has worked with companies such as
+              DoorDash, Experian, EOS Fitness, HBO Max and many more in the
+              past.
+            </p>
+            <span
+              class="grid grid-col grid-cols-2 sm:grid-cols-4 gap-3 items-center justify-center align-middle md:grid-cols-3 lg:grid-cols-4 place-items-center"
+            >
+              <img src="./images/doordash.png" class="w-28 md:w-24" />
+              <img src="./images/eos.png" class="w-28 md:w-24" />
+              <svg
+                class="w-28 md:w-24"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 146 50"
+              >
+                <style>
+                  .st4 {
+                    fill: #e63888;
+                  }
+                </style>
+                <path
+                  d="M25.41 13.088h-5.1a2.744 2.744 0 0 1-2.745-2.744v-5.1A2.744 2.744 0 0 1 20.31 2.5h5.1a2.744 2.744 0 0 1 2.743 2.744v5.1a2.744 2.744 0 0 1-2.744 2.744"
+                  fill="#426da9"
+                />
+                <path
+                  d="M12.217 24.52H6.48a3.085 3.085 0 0 1-3.088-3.086v-5.739a3.088 3.088 0 0 1 3.088-3.087h5.737a3.088 3.088 0 0 1 3.087 3.087v5.739a3.085 3.085 0 0 1-3.087 3.086"
+                  fill="#6d2077"
+                />
+                <path
+                  d="M11.67 36.428H8.166a1.887 1.887 0 0 1-1.888-1.887v-3.503c0-1.045.847-1.89 1.888-1.89h3.504c1.042 0 1.887.845 1.887 1.89v3.503a1.886 1.886 0 0 1-1.887 1.887"
+                  fill="#af1685"
+                />
+                <path
+                  class="st4"
+                  d="M21.079 47.5h-4.144a2.228 2.228 0 0 1-2.23-2.23v-4.143c0-1.234.999-2.23 2.23-2.23h4.144c1.231 0 2.23.996 2.23 2.23v4.144c0 1.233-.999 2.229-2.23 2.229M36.262 15.175h-2.87a1.544 1.544 0 0 1-1.544-1.543v-2.867c0-.853.69-1.546 1.543-1.546h2.871c.852 0 1.542.693 1.542 1.546v2.867c0 .85-.69 1.543-1.542 1.543"
+                />
+                <path
+                  d="M99.08 17.09a1.65 1.65 0 0 0 1.65-1.653 1.654 1.654 0 1 0-1.65 1.654z"
+                  fill="#004691"
+                />
+                <path
+                  d="M38.696 34.737c-.256.384-.672.575-1.12.575a1.61 1.61 0 0 1-.767-.191c-.352-.225-.608-.704-.608-1.184 0-.224.064-.448.192-.64l3.838-6.043-3.838-6.043a1.261 1.261 0 0 1-.192-.672c0-.448.224-.927.64-1.152a1.37 1.37 0 0 1 .703-.191c.448 0 .896.191 1.152.576l3.133 4.956 3.166-4.956c.256-.385.704-.576 1.152-.576.255 0 .48.064.703.191.415.225.639.704.639 1.152 0 .224-.064.48-.192.672l-3.837 6.043 3.837 6.044c.128.191.192.415.192.64 0 .479-.256.958-.608 1.183a1.607 1.607 0 0 1-.767.191c-.447 0-.863-.191-1.12-.575l-3.165-4.925-3.133 4.925zm13.68-13.655a8.171 8.171 0 0 1 5.5-2.11 8.243 8.243 0 0 1 8.283 8.282c0 4.542-3.677 8.219-8.282 8.219-2.111 0-4.062-.8-5.5-2.111v7.067c0 .703-.64 1.31-1.375 1.31-.672 0-1.343-.607-1.343-1.31V20.41c0-.703.671-1.311 1.343-1.311.735 0 1.374.608 1.374 1.31v.672zm5.5.64c-3.07 0-5.5 2.43-5.5 5.532 0 3.07 2.43 5.5 5.5 5.5 3.103 0 5.533-2.43 5.533-5.5 0-3.102-2.43-5.531-5.532-5.531zm31.695 4.03v8.281c0 .704-.672 1.31-1.343 1.31-.736 0-1.376-.607-1.376-1.31V20.411c0-.704.64-1.311 1.376-1.311.64 0 1.31.575 1.343 1.247 1.119-.863 2.558-1.343 4.125-1.375.863 0 1.502.671 1.502 1.343 0 .735-.67 1.407-1.502 1.407-2.143.064-4.125.832-4.125 4.03zm9.528-6.652c-.735 0-1.375.607-1.375 1.31v13.623c0 .704.64 1.31 1.375 1.31.672 0 1.343-.607 1.343-1.31V20.411c0-.704-.671-1.311-1.343-1.311zm17.365 1.31c0-.703.638-1.31 1.374-1.31.672 0 1.343.607 1.343 1.31v13.623c0 .704-.671 1.31-1.343 1.31-.736 0-1.374-.607-1.374-1.31v-.672a8.235 8.235 0 0 1-5.502 2.11 8.242 8.242 0 0 1-8.282-8.28c0-4.541 3.678-8.219 8.282-8.219 2.111 0 4.03.8 5.502 2.111v-.672zm-5.502 12.312c3.07 0 5.502-2.43 5.502-5.532a5.46 5.46 0 0 0-5.502-5.5c-3.101 0-5.53 2.43-5.53 5.5 0 3.102 2.429 5.532 5.53 5.532zm22.065-6.811c0-2.27-1.982-4.253-4.253-4.253-2.207 0-4.253.896-4.253 4.093v8.282c0 .704-.672 1.31-1.344 1.31-.736 0-1.374-.607-1.374-1.31V20.411c0-.704.639-1.311 1.374-1.311.64 0 1.312.575 1.344 1.247 1.151-.896 2.622-1.375 4.22-1.375 3.71 0 7.004 2.91 7.004 6.555v8.506c0 .704-.67 1.311-1.343 1.311-.736 0-1.375-.607-1.375-1.31V25.91zm-97.582.832c-.064-4.19-3.805-7.77-8.218-7.77-4.605 0-8.282 3.677-8.282 8.217a8.242 8.242 0 0 0 8.282 8.282c2.206 0 4.254-.864 5.724-2.334.288-.256.48-.64.48-1.024 0-.735-.64-1.374-1.375-1.374-.416 0-.8.255-1.087.544-.928.99-2.303 1.438-3.742 1.438-2.75 0-4.986-1.884-5.468-4.506h12.344c.009 0 .017-.003.026-.003h.037c.023-.002.046-.01.07-.013.047-.007.094-.014.14-.028a1.475 1.475 0 0 0 1.069-1.429zm-8.218-5.052c2.48 0 4.54 1.59 5.243 3.808H21.952c.703-2.217 2.766-3.808 5.275-3.808zm57.325 5.052c-.065-4.19-3.806-7.77-8.219-7.77-4.605 0-8.284 3.677-8.284 8.217a8.244 8.244 0 0 0 8.284 8.282c2.206 0 4.253-.864 5.724-2.334.288-.256.48-.64.48-1.024 0-.735-.64-1.374-1.375-1.374-.416 0-.8.255-1.088.544-.927.99-2.303 1.438-3.74 1.438-2.75 0-4.988-1.884-5.47-4.506h12.323c.009 0 .018-.003.026-.003h.059c.037-.003.073-.014.11-.022.018-.004.037-.005.055-.01a1.47 1.47 0 0 0 1.115-1.438zm-8.219-5.052c2.48 0 4.54 1.59 5.244 3.808h-10.52c.703-2.217 2.766-3.808 5.276-3.808zm62.293 13.662a.222.222 0 0 1-.226-.219v-2.307h-.516a.222.222 0 0 1-.218-.226c0-.13.094-.227.218-.227h1.492c.124 0 .218.098.218.227a.223.223 0 0 1-.218.226h-.524v2.307a.218.218 0 0 1-.226.22zm2.667.004c-.124 0-.196-.09-.223-.176l-.642-1.887v1.84a.218.218 0 0 1-.226.22.223.223 0 0 1-.226-.22V32.7c0-.182.158-.34.34-.34.144 0 .278.103.326.25l.651 1.905.645-1.905a.356.356 0 0 1 .33-.25c.18 0 .34.158.34.34v2.434a.218.218 0 0 1-.226.22.223.223 0 0 1-.227-.22V33.3l-.377 1.115-.26.768c-.05.115-.126.175-.225.175z"
+                  fill="#1d4f91"
+                />
+              </svg>
+              <img src="./images/hb0-max.png" class="w-28 md:w-24" />
+            </span>
+          </span>
+        </figure>
+
+        <!--work experience-->
+        <section class="flex flex-col space-y-10">
+          <span
+            class="flex w-full space-y-6 flex-col md:flex-row md:space-x-11 lg:space-x-24 md:space-y-0"
+          >
+            <h2 class="w-full text-2xl font-semibold md:text-3xl">
+              Work Experiences
+            </h2>
+            <p
+              class="w-full text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+            >
+              We have experiance helping dozens of clients improve their digital
+              marketing strategies, expand thier reach and engage more
+              customers.
+            </p>
+          </span>
+          <span
+            class="grid grid-col grid-cols-2 sm:grid-cols-4 gap-4 items-center justify-center align-middle md:grid-cols-4 place-items-center"
+          >
+            <img src="./images/hb0-max.png" class="w-28 md:w-32" />
+            <img src="./images/eos.png" class="w-28 md:w-32" />
+            <svg
+              class="w-28 md:w-32"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 146 50"
+            >
+              <style>
+                .st4 {
+                  fill: #e63888;
+                }
+              </style>
+              <path
+                d="M25.41 13.088h-5.1a2.744 2.744 0 0 1-2.745-2.744v-5.1A2.744 2.744 0 0 1 20.31 2.5h5.1a2.744 2.744 0 0 1 2.743 2.744v5.1a2.744 2.744 0 0 1-2.744 2.744"
+                fill="#426da9"
+              />
+              <path
+                d="M12.217 24.52H6.48a3.085 3.085 0 0 1-3.088-3.086v-5.739a3.088 3.088 0 0 1 3.088-3.087h5.737a3.088 3.088 0 0 1 3.087 3.087v5.739a3.085 3.085 0 0 1-3.087 3.086"
+                fill="#6d2077"
+              />
+              <path
+                d="M11.67 36.428H8.166a1.887 1.887 0 0 1-1.888-1.887v-3.503c0-1.045.847-1.89 1.888-1.89h3.504c1.042 0 1.887.845 1.887 1.89v3.503a1.886 1.886 0 0 1-1.887 1.887"
+                fill="#af1685"
+              />
+              <path
+                class="st4"
+                d="M21.079 47.5h-4.144a2.228 2.228 0 0 1-2.23-2.23v-4.143c0-1.234.999-2.23 2.23-2.23h4.144c1.231 0 2.23.996 2.23 2.23v4.144c0 1.233-.999 2.229-2.23 2.229M36.262 15.175h-2.87a1.544 1.544 0 0 1-1.544-1.543v-2.867c0-.853.69-1.546 1.543-1.546h2.871c.852 0 1.542.693 1.542 1.546v2.867c0 .85-.69 1.543-1.542 1.543"
+              />
+              <path
+                d="M99.08 17.09a1.65 1.65 0 0 0 1.65-1.653 1.654 1.654 0 1 0-1.65 1.654z"
+                fill="#004691"
+              />
+              <path
+                d="M38.696 34.737c-.256.384-.672.575-1.12.575a1.61 1.61 0 0 1-.767-.191c-.352-.225-.608-.704-.608-1.184 0-.224.064-.448.192-.64l3.838-6.043-3.838-6.043a1.261 1.261 0 0 1-.192-.672c0-.448.224-.927.64-1.152a1.37 1.37 0 0 1 .703-.191c.448 0 .896.191 1.152.576l3.133 4.956 3.166-4.956c.256-.385.704-.576 1.152-.576.255 0 .48.064.703.191.415.225.639.704.639 1.152 0 .224-.064.48-.192.672l-3.837 6.043 3.837 6.044c.128.191.192.415.192.64 0 .479-.256.958-.608 1.183a1.607 1.607 0 0 1-.767.191c-.447 0-.863-.191-1.12-.575l-3.165-4.925-3.133 4.925zm13.68-13.655a8.171 8.171 0 0 1 5.5-2.11 8.243 8.243 0 0 1 8.283 8.282c0 4.542-3.677 8.219-8.282 8.219-2.111 0-4.062-.8-5.5-2.111v7.067c0 .703-.64 1.31-1.375 1.31-.672 0-1.343-.607-1.343-1.31V20.41c0-.703.671-1.311 1.343-1.311.735 0 1.374.608 1.374 1.31v.672zm5.5.64c-3.07 0-5.5 2.43-5.5 5.532 0 3.07 2.43 5.5 5.5 5.5 3.103 0 5.533-2.43 5.533-5.5 0-3.102-2.43-5.531-5.532-5.531zm31.695 4.03v8.281c0 .704-.672 1.31-1.343 1.31-.736 0-1.376-.607-1.376-1.31V20.411c0-.704.64-1.311 1.376-1.311.64 0 1.31.575 1.343 1.247 1.119-.863 2.558-1.343 4.125-1.375.863 0 1.502.671 1.502 1.343 0 .735-.67 1.407-1.502 1.407-2.143.064-4.125.832-4.125 4.03zm9.528-6.652c-.735 0-1.375.607-1.375 1.31v13.623c0 .704.64 1.31 1.375 1.31.672 0 1.343-.607 1.343-1.31V20.411c0-.704-.671-1.311-1.343-1.311zm17.365 1.31c0-.703.638-1.31 1.374-1.31.672 0 1.343.607 1.343 1.31v13.623c0 .704-.671 1.31-1.343 1.31-.736 0-1.374-.607-1.374-1.31v-.672a8.235 8.235 0 0 1-5.502 2.11 8.242 8.242 0 0 1-8.282-8.28c0-4.541 3.678-8.219 8.282-8.219 2.111 0 4.03.8 5.502 2.111v-.672zm-5.502 12.312c3.07 0 5.502-2.43 5.502-5.532a5.46 5.46 0 0 0-5.502-5.5c-3.101 0-5.53 2.43-5.53 5.5 0 3.102 2.429 5.532 5.53 5.532zm22.065-6.811c0-2.27-1.982-4.253-4.253-4.253-2.207 0-4.253.896-4.253 4.093v8.282c0 .704-.672 1.31-1.344 1.31-.736 0-1.374-.607-1.374-1.31V20.411c0-.704.639-1.311 1.374-1.311.64 0 1.312.575 1.344 1.247 1.151-.896 2.622-1.375 4.22-1.375 3.71 0 7.004 2.91 7.004 6.555v8.506c0 .704-.67 1.311-1.343 1.311-.736 0-1.375-.607-1.375-1.31V25.91zm-97.582.832c-.064-4.19-3.805-7.77-8.218-7.77-4.605 0-8.282 3.677-8.282 8.217a8.242 8.242 0 0 0 8.282 8.282c2.206 0 4.254-.864 5.724-2.334.288-.256.48-.64.48-1.024 0-.735-.64-1.374-1.375-1.374-.416 0-.8.255-1.087.544-.928.99-2.303 1.438-3.742 1.438-2.75 0-4.986-1.884-5.468-4.506h12.344c.009 0 .017-.003.026-.003h.037c.023-.002.046-.01.07-.013.047-.007.094-.014.14-.028a1.475 1.475 0 0 0 1.069-1.429zm-8.218-5.052c2.48 0 4.54 1.59 5.243 3.808H21.952c.703-2.217 2.766-3.808 5.275-3.808zm57.325 5.052c-.065-4.19-3.806-7.77-8.219-7.77-4.605 0-8.284 3.677-8.284 8.217a8.244 8.244 0 0 0 8.284 8.282c2.206 0 4.253-.864 5.724-2.334.288-.256.48-.64.48-1.024 0-.735-.64-1.374-1.375-1.374-.416 0-.8.255-1.088.544-.927.99-2.303 1.438-3.74 1.438-2.75 0-4.988-1.884-5.47-4.506h12.323c.009 0 .018-.003.026-.003h.059c.037-.003.073-.014.11-.022.018-.004.037-.005.055-.01a1.47 1.47 0 0 0 1.115-1.438zm-8.219-5.052c2.48 0 4.54 1.59 5.244 3.808h-10.52c.703-2.217 2.766-3.808 5.276-3.808zm62.293 13.662a.222.222 0 0 1-.226-.219v-2.307h-.516a.222.222 0 0 1-.218-.226c0-.13.094-.227.218-.227h1.492c.124 0 .218.098.218.227a.223.223 0 0 1-.218.226h-.524v2.307a.218.218 0 0 1-.226.22zm2.667.004c-.124 0-.196-.09-.223-.176l-.642-1.887v1.84a.218.218 0 0 1-.226.22.223.223 0 0 1-.226-.22V32.7c0-.182.158-.34.34-.34.144 0 .278.103.326.25l.651 1.905.645-1.905a.356.356 0 0 1 .33-.25c.18 0 .34.158.34.34v2.434a.218.218 0 0 1-.226.22.223.223 0 0 1-.227-.22V33.3l-.377 1.115-.26.768c-.05.115-.126.175-.225.175z"
+                fill="#1d4f91"
+              />
+            </svg>
+            <img src="./images/doordash.png" class="w-28 md:w-32" />
+          </span>
+        </section>
+      </div>
+
+      <!--blog-page-->
+      <div
+        class="space-y-16 md:space-y-40 pt-16 sm:pt-18 md:pt-28 md:px-6 px-4 pb-2"
+        id="blog"
+      >
+        <section
+          class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-11 lg:space-x-24"
+        >
+          <h2 class="text-2xl w-full font-semibold md:text-3xl">
+            We can help any company improve its marketing startegy and maximize
+            its potential, regardless of industry.
+          </h2>
+          <p
+            class="w-full text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+          >
+            Our strategies will benefit companies from the healthcare industry
+            to the entertainment industry and beyond whether you can run a local
+            business or an international company, our marketing strategies will
+            help you reach and enagage with your target audience.
+          </p>
+        </section>
+
+        <section
+          class="grid grid-cols-2 gap-6 row-span-2 md:grid-cols-4 place-items-center"
+        >
+          <!--location image-->
+          <span
+            class="bg-white flex flex-col justify-between items-center p-2 space-y-4 rounded-lg shadow-2xl"
+          >
+            <img
+              src="./images/location logo.png"
+              class="w-24 h-24 sm:w-32 sm:h-32 lg:h-40 lg:w-40 object-cover"
+            />
+            <h3 class="text-base tracking-tighter md:text-xl uppercase">
+              Local
+            </h3>
+          </span>
+          <!--healthcare image-->
+          <span
+            class="bg-white flex flex-col justify-between items-center p-2 space-y-4 rounded-lg shadow-2xl"
+          >
+            <img
+              src="./images/health-care logo.png"
+              class="w-24 h-24 sm:w-32 sm:h-32 lg:h-40 lg:w-40 object-cover"
+            />
+            <h3 class="text-base tracking-tighter md:text-xl uppercase">
+              healthcare
+            </h3>
+          </span>
+          <!--saas image-->
+          <span
+            class="bg-white flex flex-col justify-between items-center p-2 space-y-4 rounded-lg shadow-2xl"
+          >
+            <img
+              src="./images/saas logo.png"
+              class="w-24 h-24 sm:w-32 sm:h-32 lg:h-40 lg:w-40 object-cover"
+            />
+            <h3 class="text-base tracking-tighter md:text-xl uppercase">
+              Saas
+            </h3>
+          </span>
+          <!--b2b image-->
+          <span
+            class="bg-white flex flex-col justify-between items-center p-2 space-y-4 rounded-lg shadow-2xl"
+          >
+            <img
+              src="./images/b2b.png"
+              class="w-24 h-24 sm:w-32 sm:h-32 lg:h-40 lg:w-40 object-cover"
+            />
+            <h3 class="text-base tracking-tighter md:text-xl uppercase">b2b</h3>
+          </span>
+        </section>
+      </div>
+
+      <!--industries-page-->
+      <div
+        id="industries"
+        class="h-auto space-y-16 md:space-y-40 pt-16 sm:pt-18 md:pt-28 md:px-6 px-4 pb-2"
+      >
+        <h2 class="text-2xl w-full font-semibold md:text-3xl text-center">
+          Explore all industries
+        </h2>
+        <!--our purpose-->
+        <section
+          class="flex flex-col space-y-10 lg:space-y-0 lg:space-x-24 lg:flex-row items-center"
+        >
+          <span class="w-full space-y-6">
+            <h2 class="text-2xl font-semibold md:text-3xl">Our purpose</h2>
+            <p
+              class="text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+            >
+              We connect brands with their customers in the moments that matter.
+              To build a strong connection with customers, you need a
+              comprehensive digital marketing strategies needed to support your
+              business's growth and expand your customer base. The CEO himself,
+              khalil khanbar, has worked with companies such as doordash,
+              experian, ros fitness, hbo max and many more in the past. WE have
+              experiance helping dozens of clients improve their digaital
+              marketing strategies, expand their reach and engage more
+              customers. Our strategies will benefit companies from the
+              healthcare industry th the entertainment industry and beyond
+              whether you can run a local business or an international company,
+              our maeketing strategies will help you reach and engage with your
+              traget audience. To be successful, your brand needs a holistic
+              marketing approach our services will carry your online marketing
+              to the next level.
+            </p>
+          </span>
+          <span
+            class="bg-red-600 w-full font-semibold text-lg flex justify-center items-center md:h-auto md:text-xl"
+            ><img
+              src="./images/team-photo.jpg"
+              class="w-full h-56 sm:h-62 object-cover md:h-72 lg:h-auto"
+          /></span>
+        </section>
+        <!--The team-->
+        <section class="space-y-6">
+          <h2
+            class="text-2xl font-semibold md:text-3xl text-center md:text-start"
+          >
+            Meet the team
+          </h2>
+          <span
+            class="grid grid-cols-2 gap-10 place-items-center md:grid-cols-4"
+          >
+            <img
+              src="./images/Ceo photo.png"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+            <img
+              src="./images/portrait-funny-business-man-formal-suit-16650185-2829000349.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+            <img
+              src="./images/person-1.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+
+            <img
+              src="./images/person-2.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+            <img
+              src="./images/person-3.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+            <img
+              src="./images/person-4.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+            <img
+              src="./images/person-5.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+            <img
+              src="./images/person-6.jpg"
+              class="h-32 w-32 object-cover md:h-40 md:w-40 rounded-lg shadow-2xl"
+            />
+          </span>
+        </section>
+        <!--share ideas-->
+        <section
+          class="flex flex-col space-y-10 md:space-y-0 md:space-x-11 lg:space-x-24 md:flex-row"
+        >
+          <span class="w-full space-y-6">
+            <h2 class="text-2xl font-semibold md:text-3xl">
+              Are you ready to share
+              <span class="text-red-700">your ideas</span> with us?
+            </h2>
+            <p
+              class="text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+            >
+              To be successful, your brand needs a holistic marketing appraoach
+              our services will carry your online marketing to the next level
+              leading to higher website traffic and more sales Kanbar Digital
+              can help your business reach its full potential for sustained
+              success. Contact us today to discuss how our digital marketing
+              agency can provide you with the services you need.
+            </p>
+          </span>
+          <!--consultation form-->
+          <span class="w-full h-auto p-0 md:p-4"
+            ><form class="h-full space-y-4 bg-white rounded-lg p-4 shadow-2xl">
+              <span class="grid space-y-2">
+                <label for="name" class="font-serif md:text-lg"
+                  >Enter your name</label
+                ><input
+                  type="text"
+                  class="w-full md:max-w-lg border-2 border-slate-400 px-2 py-1 rounded placeholder:gray placeholder:text-xs"
+                  name="name"
+                  placeholder="name"
+                />
+              </span>
+              <span class="grid space-y-2">
+                <label for="name" class="font-serif md:text-lg"
+                  >Enter your business email</label
+                ><input
+                  type="email"
+                  class="w-full md:max-w-lg border-2 border-slate-400 px-2 py-1 rounded placeholder:gray placeholder:text-xs"
+                  name="name"
+                  placeholder="email"
+                />
+              </span>
+              <span class="grid space-y-2">
+                <label for="name" class="font-serif md:text-lg"
+                  >Enter your phone number</label
+                ><input
+                  type="number"
+                  class="w-full md:max-w-lg border-2 border-slate-400 px-2 py-1 rounded placeholder:gray placeholder:text-xs"
+                  name="name"
+                  placeholder="phone"
+                />
+              </span>
+              <button
+                class="text-xs bg-red-700 px-4 py-2 rounded-xl text-white sm:text-sm md:text-base"
+              >
+                Get a free consultation
+              </button>
+            </form></span
+          >
+        </section>
+      </div>
+    </main>
+    <footer id="get-started">
+      <figure
+        class="bg-slate-900 px-4 flex flex-col space-y-10 pt-16 pb-4 sm:pt-20 md:pt-28 md:px-6 md:flex-row md:space-y-0 md:space-x-11 lg:space-x-24"
+      >
+        <section class="w-full flex flex-col space-y-10">
+          <span class="w-full">
+            <h3 class="text-white text-xl font-semibold md:text-2xl">
+              Newsletter Signup
+            </h3>
+            <p
+              class="text-white text-base font-light tracking-normal md:text-lg md:tracking-wide lg:text-xl"
+            >
+              Stay up-to-date on industry news and more
+            </p>
+          </span>
+          <span
+            class="flex flex-col xl:flex-row space-y-6 xl:space-y-0 xl:justify-between xl:space-x-5"
+          >
+            <input
+              type="email"
+              class="w-full md:max-w-lg border-2 border-slate-400 px-2 py-1 rounded placeholder:gray placeholder:text-xs md:placeholder:text-sm lg:placeholder:text-base"
+              name="name"
+              placeholder="enter your email"
+            />
+            <button
+              class="w-full text-xs bg-red-700 px-4 py-2 rounded-full text-white sm:text-sm md:text-base"
+            >
+              subscribe to new letter
+            </button>
+          </span>
+        </section>
+        <section class="w-full flex items-center justify-center">
+          <img
+            class="w-40 sm:w-52 object-cover md:h-full md:w-60 lg:w-72"
+            src="./images/blue_email_with_bell_notification_icon_3d_background_illustration.png"
+          />
+        </section>
+      </figure>
+      <div
+        class="bg-gray-300 flex flex-col px-4 md:px-6 py-10 space-y-10 lg:flex-row lg:justify-between align-middle lg:space-y-0"
+      >
+        <section class="flex flex-col space-y-6 max-h-24">
+          <h3
+            class="text-xl font-bold uppercase h-full flex items-center sm:text-2xl lg:text-4xl text-red-700"
+          >
+            Digital llc
+          </h3>
+          <p class="text-xs">
+            We connect brands with their customers in the moments that matters.
+          </p>
+          <span class="flex space-x-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-facebook"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-twitter"
+            >
+              <path
+                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </span>
+        </section>
+        <section class="flex flex-col space-y-3">
+          <h2>Services</h2>
+          <a class="font-thin cursor-pointer">SEO</a>
+          <a class="font-thin cursor-pointer">Digital PR</a>
+          <a class="font-thin cursor-pointer">Amazon</a>
+          <a class="font-thin cursor-pointer">Email</a>
+        </section>
+        <section class="flex flex-col space-y-3">
+          <h2>Sitemaps</h2>
+          <a class="font-thin cursor-pointer">About us</a>
+          <a class="font-thin cursor-pointer">Industries</a>
+          <a class="font-thin cursor-pointer">services</a>
+          <a class="font-thin cursor-pointer">Blog</a>
+          <a class="font-thin cursor-pointer">Contact us</a>
+        </section>
+        <section class="flex flex-col space-y-3">
+          <h2>Industries</h2>
+          <a class="font-thin cursor-pointer">Local</a>
+          <a class="font-thin cursor-pointer">B2B</a>
+          <a class="font-thin cursor-pointer">Healthcare</a>
+          <a class="font-thin cursor-pointer">Saas</a>
+          <a class="font-thin cursor-pointer">News</a>
+          <a class="font-thin cursor-pointer">Tv and streaming</a>
+        </section>
+      </div>
+      <h2 class="bg-gray-300 font-thin text-sm p-4 md:px-6 text-center">
+        Copyright@2023 DIGITAL LLC alright reserved.
+      </h2>
+    </footer>
+  </body>
+</html>
